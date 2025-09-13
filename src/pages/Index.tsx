@@ -361,7 +361,7 @@ const Index = () => {
                     size="lg"
                     className="group font-semibold"
                   >
-                    Get Notified
+                    https://rahulflix.vercel.app/
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </Button>
                 </div>
