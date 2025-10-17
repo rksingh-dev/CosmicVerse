@@ -23,6 +23,7 @@ import {
   Clock,
   Shield,
   Sparkles,
+  File,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -68,6 +69,19 @@ const Index = () => {
       features: ["Ad-free Experience", "YouTube Integration", "High Quality"],
       stats: "100,000+ Songs",
       category: "Entertainment",
+    },
+    {
+      title: "FileForge",
+      description:
+        "Architected a client-side image compression system achieving 70% size reduction while maintaining 95% visual quality, with support for batch processing and drag-and-drop functionality. Implemented a robust image-to-PDF conversion engine featuring multi-image merging, customizable page layouts, and quality preservation with real-time preview.",
+      url: "https://fileforgebyrahul.vercel.app/",
+      icon: File,
+      gradient: "from-orange-600 to-orange-700",
+      iconBg: "bg-orange-100 dark:bg-orange-900/20",
+      iconColor: "text-orange-600 dark:text-orange-400",
+      features: ["Image Compression", "PDF Conversion", "Batch Processing"],
+      stats: "10,000+ Files Processed",
+      category: "Tools",
     },
   ];
 
