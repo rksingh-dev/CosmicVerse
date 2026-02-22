@@ -99,15 +99,6 @@ const Index = () => {
       return () => clearTimeout(timer);
     });
 
-    // Optimize scroll performance
-    const optimizeScrolling = () => {
-      document.documentElement.style.scrollBehavior = "smooth";
-      document.body.style.overflowX = "hidden";
-      document.body.style.overscrollBehavior = "none";
-    };
-
-    optimizeScrolling();
-
     return () => {
       cancelAnimationFrame(frameId);
     };
@@ -118,9 +109,9 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-background via-muted/30 to-background ultra-smooth-container">
+    <div className="min-h-screen relative overflow-x-hidden bg-gradient-to-br from-background via-muted/30 to-background">
       {/* Elegant Background Elements */}
-      <div className="fixed inset-0 w-full h-full z-0 overflow-hidden ultra-smooth-container">
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none">
         {/* Subtle gradient mesh */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-muted/10 smooth-transform" />
 
@@ -163,18 +154,17 @@ const Index = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 min-h-screen ultra-smooth-container">
+      <div className="relative z-10 min-h-screen">
         {/* Hero Section */}
         <section className="relative section-padding ultra-smooth-container">
           {/* Subtle radial gradient for focus */}
           <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-muted/10 pointer-events-none smooth-transform" />
           <div className="container mx-auto px-4 ultra-smooth-container">
             <div
-              className={`max-w-4xl mx-auto text-center transition-all duration-1000 ease-out ${
-                isVisible
+              className={`max-w-4xl mx-auto text-center transition-all duration-1000 ease-out ${isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-10 opacity-0"
-              }`}
+                }`}
             >
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-in">

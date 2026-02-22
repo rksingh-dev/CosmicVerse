@@ -97,7 +97,6 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
-    overflow-x: hidden;
   }
 
   body {
@@ -109,21 +108,10 @@
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeSpeed;
     overflow-x: hidden;
-    overscroll-behavior: none;
     /* Ultra-smooth scrolling */
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
   }
 
-  /* Global performance optimizations */
-  * {
-    /* Hardware acceleration for all elements */
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-    /* Optimize compositing */
-    will-change: auto;
-  }
 
   /* Smooth transforms for animations */
   .smooth-transform {
