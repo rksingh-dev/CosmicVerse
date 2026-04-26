@@ -60,14 +60,27 @@ const Index = () => {
     {
       title: "Music Streaming",
       description:
-        "Ad-free music streaming experience powered by YouTube API. Discover and enjoy unlimited music.",
-      url: "https://rahulfm.vercel.app/",
+        "Access unlimited songs, ad‑free and lightning‑fast, with real‑time global charts",
+      url: "https://auramusic-one.vercel.app/",
       icon: Music,
       gradient: "from-purple-600 to-purple-700",
       iconBg: "bg-purple-100 dark:bg-purple-900/20",
       iconColor: "text-purple-600 dark:text-purple-400",
       features: ["Ad-free Experience", "YouTube Integration", "High Quality"],
       stats: "100,000+ Songs",
+       category: "Entertainment",
+    },
+    {
+      title: "Movie Streaming",
+      description:
+        "Experience cinema like never before with our upcoming movie streaming platform. High-quality content, seamless playback, and an ad‑free experience.",
+      url: "https://rahulflix.vercel.app/",
+      icon: Play,
+      gradient: "from-purple-600 to-purple-700",
+      iconBg: "bg-purple-100 dark:bg-purple-900/20",
+      iconColor: "text-purple-600 dark:text-purple-400",
+      features: ["4K Quality", "Ad-free", "Fast Loading"],
+      stats: "1000+",
       category: "Entertainment",
     },
     {
@@ -303,77 +316,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Coming Soon Section */}
-        <section className="section-padding ultra-smooth-container">
-          <div className="container mx-auto px-4 ultra-smooth-container">
-            <div className="max-w-4xl mx-auto text-center">
-              <Card className="glass-card p-12 hover-lift subtle-glow">
-                <div className="mb-8">
-                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100 dark:bg-green-900/20 border border-green-200 dark:border-green-800 mb-6">
-                    <Monitor className="w-4 h-4 text-green-600 dark:text-green-400" />
-                    <span className="text-sm font-medium text-green-600 dark:text-green-400">
-                      Now Available
-                    </span>
-                  </div>
 
-                  <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-                    Movie Streaming
-                  </h2>
-
-                  <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-                    Experience cinema like never before with our upcoming movie
-                    streaming platform. High-quality content, seamless playback,
-                    and an ad-free experience.
-                  </p>
-
-                  {/* Coming Soon Features */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                    {[
-                      {
-                        icon: Star,
-                        title: "4K Quality",
-                        desc: "Ultra HD streaming",
-                      },
-                      {
-                        icon: Shield,
-                        title: "Ad-free",
-                        desc: "Uninterrupted viewing",
-                      },
-                      {
-                        icon: Zap,
-                        title: "Fast Loading",
-                        desc: "Instant playback",
-                      },
-                    ].map((feature, idx) => (
-                      <div
-                        key={idx}
-                        className="p-4 rounded-xl bg-muted/50 border border-border"
-                      >
-                        <feature.icon className="w-6 h-6 text-primary mx-auto mb-2" />
-                        <h3 className="font-semibold text-foreground mb-1">
-                          {feature.title}
-                        </h3>
-                        <p className="text-sm text-muted-foreground">
-                          {feature.desc}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-
-                  <Button
-                    className="bg-gradient-to-r from-purple-600 to-purple-700 hover:opacity-90 text-white font-semibold btn-professional group"
-                    size="lg"
-                    onClick={() => handleAppLaunch("https://rahulflix.vercel.app/")}
-                  >
-                    <Play className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform duration-300" />
-                    Watch Movies
-                    <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                  </Button>
-                </div>
-              </Card>
-            </div>
-          </div>
-        </section>
 
         {/* Footer */}
         <footer className="border-t border-border bg-muted/20">
