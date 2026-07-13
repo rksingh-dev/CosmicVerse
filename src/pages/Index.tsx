@@ -24,6 +24,8 @@ import {
   Shield,
   Sparkles,
   File,
+  FileText,
+  Brain,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -68,7 +70,7 @@ const Index = () => {
       iconColor: "text-purple-600 dark:text-purple-400",
       features: ["Ad-free Experience", "YouTube Integration", "High Quality"],
       stats: "100,000+ Songs",
-       category: "Entertainment",
+      category: "Entertainment",
     },
     {
       title: "Movie Streaming",
@@ -95,6 +97,32 @@ const Index = () => {
       features: ["Image Compression", "PDF Conversion", "Batch Processing"],
       stats: "10,000+ Files Processed",
       category: "Tools",
+    },
+    {
+      title: "RKSNotes",
+      description:
+        "A minimalist, secure note‑taking notepad. No sign‑up or log‑in required. Your notes are stored entirely in the URL hash, making it easy to share notes instantly and privately without any server storage.",
+      url: "https://rksnotes.vercel.app/",
+      icon: FileText,
+      gradient: "from-emerald-600 to-teal-700",
+      iconBg: "bg-emerald-100 dark:bg-emerald-900/20",
+      iconColor: "text-emerald-600 dark:text-emerald-400",
+      features: ["No Sign-up / Login", "URL Hash Sharing", "Download Note (.md)", "Browser Local Backup"],
+      stats: "Serverless & Secure",
+      category: "Tools",
+    },
+    {
+      title: "Kalkibot",
+      description:
+        "Advanced RAG Pipeline sandbox. Upload PDFs (up to 50MB) to initialize lexical BM25 and neural BGE index. Test hybrid retrieval, Cross-Encoder attention re-ranking, and MMR diversity filters with rich live telemetry.",
+      url: "https://kalkibot.vercel.app/",
+      icon: Brain,
+      gradient: "from-indigo-600 to-violet-700",
+      iconBg: "bg-indigo-100 dark:bg-indigo-900/20",
+      iconColor: "text-indigo-600 dark:text-indigo-400",
+      features: ["Hybrid Search (Dense+BM25)", "Cross-Encoder Re-ranking", "MMR Diversity Filter", "Citations Visualizer"],
+      stats: "Advanced RAG Pipeline",
+      category: "AI & ML",
     },
   ];
 
